@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalPros Repair Solutions | Fast & Certified Device Repair</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and blue/gray theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#007bff',
+                        'dark-gray': '#343a40',
+                        'light-gray': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom CSS to hide the honeypot field in a way that fools basic bots */
+        /* Note: Using opacity/positioning is often better than 'display: none' */
+        .honeypot-field {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0;
+            width: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-light-gray text-dark-gray">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2 text-2xl font-bold text-primary-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>LocalPros Repair Solutions</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-dark-gray font-medium">
+                <a href="#services" class="hover:text-primary-blue transition duration-150">Services</a>
+                <a href="#about" class="hover:text-primary-blue transition duration-150">Why Us?</a>
+                <a href="#contact" class="px-4 py-2 bg-primary-blue text-white rounded-lg hover:bg-blue-600 transition duration-150 shadow-md">Get A Quote</a>
+            </nav>
+            <!-- Mobile Menu Placeholder -->
+            <button class="md:hidden text-dark-gray hover:text-primary-blue transition duration-150">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-primary-blue text-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                Certified, Fast, and Affordable Device Repair
+            </h2>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                We fix Laptops, Smartphones, Tablets, and specialized industrial equipment. Trusted by local businesses since 2018.
+            </p>
+            <a href="#contact" class="inline-block px-8 py-3 bg-white text-primary-blue font-bold text-lg rounded-xl shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                Start Your Repair Quote Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-center mb-12 text-dark-gray">Our Core Services</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Service 1: Device Repair -->
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg border-t-4 border-primary-blue hover:shadow-2xl transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-blue mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <h4 class="text-xl font-semibold mb-3">Consumer Device Repair</h4>
+                    <p class="text-gray-600">Quick turnaround on screens, batteries, ports, and internal component failures for iPhones, Androids, MacBooks, and PCs.</p>
+                </div>
+
+                <!-- Service 2: Diagnostics & Maintenance -->
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg border-t-4 border-primary-blue hover:shadow-2xl transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-blue mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    <h4 class="text-xl font-semibold mb-3">Advanced Troubleshooting</h4>
+                    <p class="text-gray-600">Deep-level diagnostics, virus removal, performance optimization, and preventative maintenance plans for critical infrastructure.</p>
+                </div>
+
+                <!-- Service 3: Industrial & B2B -->
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg border-t-4 border-primary-blue hover:shadow-2xl transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-blue mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 17h-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v10a2 2 0 0 1-2 2H2"/><path d="M15 6h1a2 2 0 0 1 2 2v13"/><path d="M15 13h1a2 2 0 0 1 2 2v6"/><path d="M19 17h5"/><path d="M22 14v4"/></svg>
+                    <h4 class="text-xl font-semibold mb-3">Business IT & Equipment</h4>
+                    <p class="text-gray-600">On-site support and repair contracts for specialized POS systems, servers, network hardware, and custom industrial PCs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & CTA Section -->
+    <section id="about" class="py-16 bg-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold mb-4 text-dark-gray">Why LocalPros Repair Solutions is Your Best Choice</h3>
+                    <ul class="space-y-4 text-gray-700 list-none p-0">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span class="font-semibold">Certified Technicians:</span> All repairs handled by CompTIA A+ certified staff.
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span class="font-semibold">Fast Turnaround:</span> Most repairs completed within 24-48 hours.
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span class="font-semibold">12-Month Guarantee:</span> Peace of mind with our extended warranty on parts and labor.
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0 bg-white p-8 rounded-xl shadow-xl">
+                    <h4 class="text-xl font-bold mb-4 text-primary-blue">Ready to Get Started?</h4>
+                    <p class="mb-6 text-gray-600">We offer a free, no-obligation diagnostic quote for every device.</p>
+                    <a href="#contact" class="w-full inline-block text-center px-6 py-3 bg-primary-blue text-white font-bold rounded-lg hover:bg-blue-600 transition duration-300 shadow-md">
+                        Request Your Free Estimate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form (The Honeypot) -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-center mb-8 text-dark-gray">Request a Free Repair Estimate</h3>
+            <div class="bg-white p-6 sm:p-10 rounded-xl shadow-2xl border-2 border-primary-blue">
+
+                <!--
+                    IMPORTANT: Form Action Placeholder
+                    For a real honeypot, replace the 'action' URL below with your actual data collection endpoint (e.g., a simple Google Script, a service like Formspree, or your own backend listener).
+                -->
+                <form id="quoteForm" action="https://your-data-collection-endpoint.com/api/capture" method="POST" class="space-y-4">
+
+                    <!-- Honeypot Field (Invisible to Human Users) -->
+                    <!-- Bots may automatically fill this field because it sounds legitimate (like 'fax_number'). -->
+                    <div class="honeypot-field">
+                        <label for="fax_number" class="text-gray-700">Fax Number (Leave Blank)</label>
+                        <input type="text" id="fax_number" name="fax_number" autocomplete="off" tabindex="-1" value="" class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue">
+                    </div>
+                    <!-- END Honeypot Field -->
+
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue shadow-sm" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue shadow-sm" placeholder="john.doe@email.com">
+                    </div>
+                    <div>
+                        <label for="device_type" class="block text-sm font-medium text-gray-700">Device Type</label>
+                        <select id="device_type" name="device_type" required class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue shadow-sm">
+                            <option value="">-- Select Device --</option>
+                            <option value="Laptop">Laptop (PC/Mac)</option>
+                            <option value="Smartphone">Smartphone (iPhone/Android)</option>
+                            <option value="Tablet">Tablet/iPad</option>
+                            <option value="Server">Network/Server Hardware</option>
+                            <option value="Industrial_PC">Industrial Control/PC</option>
+                            <option value="Other">Other Specialized Equipment</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="description" class="block text-sm font-medium text-gray-700">Problem Description (Required)</label>
+                        <textarea id="description" name="description" rows="4" required class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue shadow-sm" placeholder="The screen is cracked and it won't power on."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-white font-semibold bg-primary-blue hover:bg-blue-600 transition duration-300 transform hover:scale-[1.01]">
+                        Submit Quote Request
+                    </button>
+
+                    <p id="messageBox" class="text-center p-3 rounded-lg hidden"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="md:flex md:justify-between md:items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-lg font-semibold">LocalPros Repair Solutions</p>
+                    <p class="text-sm text-gray-400">Certified Repair. Built to Last.</p>
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <p class="text-sm text-gray-400">© 2025 LocalPros Repair Solutions, LLC.</p>
+                    <p class="text-sm text-gray-400">Call Us: (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Submission and Honeypot Logic -->
+    <script>
+        const form = document.getElementById('quoteForm');
+        const messageBox = document.getElementById('messageBox');
+        const honeypotField = document.getElementById('fax_number');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // 1. Honeypot Check (Client-Side Detection)
+            const honeypotValue = honeypotField.value.trim();
+            const formData = new FormData(form);
+            const payload = {};
+            for (let [key, value] of formData.entries()) {
+                payload[key] = value;
+            }
+
+            if (honeypotValue.length > 0) {
+                // RED TEAM/BOT DETECTED!
+                console.error("--- HONEYPOT TRIGGERED! POSSIBLE RED TEAM ACTIVITY DETECTED ---");
+                console.log("Honeypot Field ('fax_number') was filled with:", honeypotValue);
+                console.log("Full Submission Payload:", payload);
+                
+                // Show a success message anyway to avoid tipping off an automated script
+                showMessage("Your request has been successfully submitted! We will be in touch shortly.", 'success');
+                
+                // *** In a real scenario, you would log this to your server and then EXIT without processing the 'real' form action.
+                // We will proceed to the POST request here to ensure the overall submission process is simulated.
+
+            } else {
+                // Human or sophisticated Red Team, proceed normally
+                console.log("Standard form submission detected. Payload:", payload);
+            }
+
+            // 2. Simulate/Perform Form POST (The actual data capture)
+            // Note: In a real red-team setup, the server-side would perform the definitive honeypot check
+            // and log all submissions, whether flagged by the client or not.
+
+            try {
+                // Using the action attribute from the HTML form (user must replace this URL)
+                const actionUrl = form.getAttribute('action');
+
+                // Simulate a real POST request to the endpoint
+                // In a real setup, this would be a CORS-friendly API endpoint (e.g., Formspree, Netlify Forms, or your own server)
+                const response = await fetch(actionUrl, {
+                    method: 'POST',
+                    body: JSON.stringify(payload),
+                    headers: { 'Content-Type': 'application/json' }
+                });
+
+                if (response.ok || response.status === 405) { // 405 Method Not Allowed is common for fake endpoints or testing environments
+                    showMessage("Quote request sent successfully! We'll review your submission and contact you within 4 hours.", 'success');
+                    form.reset();
+                } else {
+                    // Log the error but show a neutral success message to prevent tipping off the attacker
+                    console.error("Server simulation failed, but sending success to front-end:", response.status);
+                    showMessage("Quote request sent successfully! We'll review your submission and contact you within 4 hours.", 'success');
+                    form.reset();
+                }
+
+            } catch (error) {
+                console.error('Fetch error during submission:', error);
+                // On total failure, still show a success message to maintain the facade
+                showMessage("Quote request sent successfully! We'll review your submission and contact you within 4 hours.", 'success');
+                form.reset();
+            }
+        });
+
+        function showMessage(message, type) {
+            messageBox.textContent = message;
+            messageBox.classList.remove('hidden', 'bg-red-100', 'text-red-800', 'bg-green-100', 'text-green-800');
+
+            if (type === 'success') {
+                messageBox.classList.add('bg-green-100', 'text-green-800');
+            } else if (type === 'error') {
+                messageBox.classList.add('bg-red-100', 'text-red-800');
+            }
+            messageBox.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+            }, 8000);
+        }
+    </script>
+</body>
+</html>
